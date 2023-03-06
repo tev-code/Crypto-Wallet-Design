@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #131212;
+  color: #ffffff;
+}
+
+h1, h2{
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(to right,#f75990 ,#fff685,#00DDFF,#0049B7 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Climate Crisis', cursive;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+}
+
+#menu-btn {
+  display: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  display: block;
+  padding: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  background: linear-gradient(to right,#f75990 ,#fff685,#00DDFF,#0049B7 );
+  color: black;
+}
+
+/* Coin card container */
+.coin-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+/* Coin card */
+.coin-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.coin-card:hover {
+  transform: scale(1.05);
+}
+
+.coin-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.coin-card img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.coin-card p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  /* Navbar styles */
+  #menu-btn {
+    display: block;
+  }
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333333;
+  }
+  li {
+    margin: 0;
+  }
+  a {
+    display: block;
+    padding: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+  }
+ 
+}
