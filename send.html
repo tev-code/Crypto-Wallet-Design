@@ -1,0 +1,169 @@
+ <nav>
+       <a class="navbar-brand" href="#">
+    <img src="logo.jpg" alt="Logo" class="logo">
+    </a>
+      <button id="menu-btn">Menu</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="send.html">Send</a></li>
+        <li><a href="#">Receive</a></li>
+        <li><a href="#">Transactions</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+ <div class="send-page">
+    <h2>Send Crypto</h2>
+    <form action="">
+    <label for="to">To:</label>
+    <input type="text" id="to" name="to" required>
+
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" name="amount" required>
+
+    <label for="currency">Currency:</label>
+    <select id="currency" name="currency" required>
+    <option value="">Select a currency</option>
+    <option value="BTC">BTC</option>
+    <option value="ETH">ETH</option>
+    <option value="LTC">LTC</option>
+    </select>
+
+    <label for="fee">Fee:</label>
+    <input type="number" id="fee" name="fee" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">Send</button>
+    </form>
+</div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+background: #292929;
+color: #ffffff;
+}
+
+h1, h2{
+margin: 0;
+padding: 1rem;
+text-align: center;
+background: linear-gradient(to right,#f75990 ,#fff685,#00DDFF,#0049B7 );
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: 'Climate Crisis', cursive;
+}
+
+#app {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 1rem;
+}
+
+nav {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: #000000;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+}
+
+#menu-btn {
+display: none;
+}
+
+ul {
+display: flex;
+flex-direction: row;
+margin: 0;
+padding: 0;
+}
+
+li {
+margin: 0;
+list-style: none;
+}
+
+a {
+display: block;
+padding: 1rem;
+color: #ffffff;
+text-decoration: none;
+}
+
+a:hover {
+background: linear-gradient(to right,#f75990 ,#fff685,#00DDFF,#0049B7 );
+color: black;
+}
+
+.send-page {
+max-width: 600px;
+margin: 0 auto;
+}
+
+h2 {
+font-size: 32px;
+margin-bottom: 20px;
+}
+
+form {
+background-color: #000000;
+padding: 20px;
+border-radius: 5px;
+}
+
+label {
+font-weight: bold;
+display: block;
+margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+background-color: #ffffff;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border-radius: 5px;
+border: none;
+background-color: #ffffff;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+background: linear-gradient(to right,#f75990 ,#fff685,#00DDFF,#0049B7 ); 
+color: #000000;
+font-size: 18px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #4d4dff;
+}
+
+</style>
